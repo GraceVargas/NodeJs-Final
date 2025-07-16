@@ -17,14 +17,14 @@ API disponible en: [https://api-rest-node-project.vercel.app](https://api-rest-n
 
 ## Variables de entorno a utilizar
 
-FIREBASE_API_KEY=XXXXX
-FIREBASE_AUTH_DOMAIN=XXXXX
-FIREBASE_PROJECT_ID=XXXXXX
-FIREBASE_STOREAGE_BUCKET=XXXXXXX
-FIREBASE_MESSAGING_SENDER_ID=XXXXXXXX
-FIREBASE_APP_ID=XXXXXXXX
-JWT_SECRET_KEY=XXXXXXXX
-PORT=XXXXXX
+FIREBASE_API_KEY=XXXXX<br>
+FIREBASE_AUTH_DOMAIN=XXXXX<br>
+FIREBASE_PROJECT_ID=XXXXXX<br>
+FIREBASE_STOREAGE_BUCKET=XXXXXXX<br>
+FIREBASE_MESSAGING_SENDER_ID=XXXXXXXX<br>
+FIREBASE_APP_ID=XXXXXXXX<br>
+JWT_SECRET_KEY=XXXXXXXX<br>
+PORT=XXXXXX<br>
 
 ## 📦 Endpoints
 
@@ -43,15 +43,15 @@ Para autenticarse, enviar un POST a `/auth/login` con:
 Si los datos son correctos, se devuelve un token JWT que debe usarse en los headers:
 Authorization: Bearer <token>
 
-GET /api/products devuelve todos los productos.
-GET /api/products/:id devuelve el producto con el ID indicado.
-POST /api/products/create recibe en el cuerpo (body) de la petición la información sobre el nuevo producto para ser guardado en el servicio de datos en la nube.
-  Ejemplo:  {
-      "nombre": "resma",
-      "precio": 4500,
-      "categoria": "libreria",
-      "disponible": true
-    }
-DELETE /api/products/:id elimina el producto con el ID indicado.
-POST /auth/login recibe las credenciales de usuario en el cuerpo (body) de la petición y devuelve el Bearer token si son válidas o un error de autenticación en caso contrario.
+GET /api/products devuelve todos los productos.<br>
+GET /api/products/:id devuelve el producto con el ID indicado.<br>
+POST /api/products/create recibe en el cuerpo (body) de la petición la información sobre el nuevo producto para ser guardado en el servicio de datos en la nube.<br>
+  Ejemplo:  {<br>
+      "nombre": "resma",<br>
+      "precio": 4500,<br>
+      "categoria": "libreria",<br>
+      "disponible": true<br>
+    }<br>
+DELETE /api/products/:id elimina el producto con el ID indicado.<br>
+POST /auth/login recibe las credenciales de usuario en el cuerpo (body) de la petición y devuelve el Bearer token si son válidas o un error de autenticación en caso contrario.<br>
 
